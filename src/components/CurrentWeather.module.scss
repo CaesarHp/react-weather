@@ -1,0 +1,79 @@
+@import "../scss-var/scss-var.scss";
+
+.current-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+  }
+
+  &-temp {
+    font-size: 8rem;
+    font-weight: 400;
+    margin: 0;
+    margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 0;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &-local {
+    margin-right: 3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 0;
+      margin-bottom: 3rem;
+      align-items: center;
+    }
+
+    &-city {
+      font-size: 5rem;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    &-date {
+      font-size: 1.5rem;
+      font-weight: inherit;
+      margin: 0;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  &-condition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-icon {
+      width: 6rem;
+      height: 6rem;
+      margin: 0;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+
+    &-main {
+      font-size: 1.5rem;
+      font-weight: inherit;
+      margin: 0;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "../scss-var/scss-var.scss";
+
+.weather-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-large) {
+    max-width: 60%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    max-width: 70%;
+  }
+
+  &-title {
+    font-size: 2rem;
+    font-weight: 700;
+
+    @media only screen and (max-width: $bp-large) {
+      display: flex;
+      justify-content: center;
+
+      font-size: 3.5rem;
+    }
+  }
+
+  &-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.4rem;
+    font-weight: inherit;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 3rem;
+    }
+
+    &-parameter {
+      color: rgba($color: #ffffff, $alpha: 0.5);
+    }
+  }
+}
